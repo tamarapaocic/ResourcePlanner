@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, Verdana, sans-serif;
+  color: #111111;
+  width: 990px;
+  margin: 10px 10px;
+}
+
+table#dataTable {
+  width: 100%;
+  border-spacing: 0px;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+  display: none;
+}
+
+table#popupTable {
+  width: 100%;
+  border-spacing: 0px;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+  display: block;
+}
+
+th.header, th.headerRow, td {
+  padding: 10px 5px 10px 5px;
+  border-spacing: 0px;
+  font-size: 90%;
+  margin: 0px;
+  text-align: left;
+  border-top: 1px solid #f1f8fe;
+  border-bottom: 1px solid #cbd2d8;
+  border-right: 1px solid #cbd2d8;
+}
+
+tr.head {
+  height: 38px;
+  font-size: 18px;
+}
+
+th.header {
+  text-align: center;
+  background: linear-gradient(white, #efefef);
+}
+
+th.headerRow {
+  width: 170px;
+}
+
+tr.head th {
+  color: black;
+  background-color: #efefef;
+  border-bottom: 2px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+  border-top: 1px solid #dcdcdc;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+
+#total {
+  text-align: right;
+}
+
+tfoot {
+  background: linear-gradient(white, #efefef);
+}
+
+th {
+  letter-spacing: 0.1em;
+  font-size: 90%;
+}
+
+tr.even {
+  background-color: #efefef;
+}
+
+th.headerRow {
+  width: 300px;
+}
+
+td:not(.total-td):not(.total-td-projects):hover {
+  background-color: #c3e6e5;
+}
+
+td {
+  text-align: right;
+  width: 60px;
+  font-size: 13px;
+}
