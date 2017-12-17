@@ -19,7 +19,7 @@ function getSelectedYear() {
 
 
 /**
- * Show/hide select boxes and button on clicking on Filter
+ * Show/hide select boxes and button on clicking on Filter.
  */
 function toggleFieldset() {
   if (filter.innerHTML == '+ Filter' && fieldset.style.display === "none") {
@@ -30,9 +30,9 @@ function toggleFieldset() {
 }
 
 /**
- * Get appropriate employees data
- * Generate the main table
- * Display table
+ * Get appropriate employees data depending on were they updated or not.
+ * Generate the main table.
+ * Display table.
  */
 function setMain() {
   hideFieldset();
@@ -40,21 +40,18 @@ function setMain() {
   // Get all emyployees from local storage if they were updated earlier
   updatedEmployees = JSON.parse(localStorage.getItem("updatedMainTable"));
 
-  // If running application first time use employees data or use updatedEmployees if some changes were already made
   if (updatedEmployees == null || typeof updatedEmployees == undefined) {
     renderMainTable(employees);
   } else {
     renderMainTable(updatedEmployees);
   }
 
-  // If specific data is empty hide table and send a warning
   if (specificData.length == 0) {
     hideMainTable();
     alert("No data for selected team/year! Try again please.");
     showFieldset();
     return;
   } else {
-    // If it's not empty, show the main table with choosen and calculated data
     showMainTable();
   }
   readMainTable(specificData);
@@ -63,7 +60,8 @@ function setMain() {
 }
 
 /**
- * Set selected data in the popup table
+ * Generate the popup table based on choosen data.
+ * Display table.
  * @param {Event} event - target event property returns the element that triggered the event
  */
 function setPopup(event) {
@@ -87,7 +85,7 @@ function setPopup(event) {
 
 
 /**
- * Save employees data with newly made changes
+ * Save employees data with newly made changes.
  */
 function saveData() {
   if (updatedEmployees == null) {
