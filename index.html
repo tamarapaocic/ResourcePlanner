@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Resource planner</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div id="content">
+    <table id="title">
+      <tr>
+        <th>Reports | Team(s)</th>
+      </tr>
+    </table>
+
+    <div id="contentInside">
+      <fieldset>
+        <legend>- Filter</legend>
+        <table id="tableInFilter">
+          <tr id="row">
+            <th scope="col">
+              <form name="selectForTeam">
+                <select required id="team" autocomplete="off">
+      <option value="" disabled selected hidden autocomplete="off">Select team</option>
+        <option value="0" >Absenger</option>
+        <option value="1" >Alicic</option>
+        <option value="2" >Burscher</option>
+        <option value="3" >Faustner</option>
+        <option value="4" >Konrad</option>
+        <option value="5" >Krenn</option>
+        <option value="6" >Lang</option>
+    </select>
+              </form>
+            </th>
+
+            <th scope="col"></th>
+
+            <th scope="col">
+              <form name="selectForYear">
+                <select required id="year" autocomplete="off">
+        <option value="" disabled selected hidden autocomplete="off">Select year</option>
+        <option value="0" >2017</option>
+        <option value="1" >2016</option>
+        <option value="2" >2015</option>
+        <option value="3" >2014</option>
+        <option value="4" >2013</option>
+        <option value="5" >2012</option>
+    </select>
+              </form>
+            </th>
+
+            <th scope="col"></th>
+
+            <th scope="col">
+              <button id="show">Show</button>
+            </th>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+  </div>
+
+
+  <div id="divDataTable">
+    <table id="dataTable">
+      <thead>
+        <tr class="head">
+          <th id="nameOfTeam" colspan="13"> </th>
+        </tr>
+        <tr class="even">
+          <th scope="col" class="header">Name</th>
+          <th scope="col" class="header">Jan</th>
+          <th scope="col" class="header">Feb</th>
+          <th scope="col" class="header">Mar</th>
+          <th scope="col" class="header">Apr</th>
+          <th scope="col" class="header">Mai</th>
+          <th scope="col" class="header">Jun</th>
+          <th scope="col" class="header">Jul</th>
+          <th scope="col" class="header">Aug</th>
+          <th scope="col" class="header">Sep</th>
+          <th scope="col" class="header">Okt</th>
+          <th scope="col" class="header">Nov</th>
+          <th scope="col" class="header">Dez</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th scope="row" class="headerRow" id="total">Total:</th>
+          <td class="total-td"></td>
+          <td class="total-td"></td>
+          <td class="total-td"></td>
+          <td class="total-td"></td>
+          <td class="total-td"></td>
+          <td class="total-td"></td>
+          <td class="total-td"></td>
+          <td class="total-td"></td>
+          <td class="total-td"></td>
+          <td class="total-td"></td>
+          <td class="total-td"></td>
+          <td class="total-td"></td>
+
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+
+  <div class="modal">
+    <div class="modal_close close"></div>
+    <div class="modal_main">
+      <img src="css/close.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
+
+      <div id="divTablePopup">
+        <table id="popupTable">
+          <thead id="popupThead">
+          </thead>
+
+          <tbody>
+          </tbody>
+
+          <tfoot id="popupFoot">
+          </tfoot>
+        </table>
+        <button id="save">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/employees-db.js"></script>
+  <script src="scripts/jquery-1.10.2.min.js"></script>
+  <script src="scripts/display.js"></script>
+  <script src="scripts/data-structure.js"></script>
+  <script src="scripts/helper.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
