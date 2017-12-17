@@ -1,5 +1,5 @@
-@import url("styleTable.css");
-@import url("styleModal.css");
+@import url("style-table.css");
+@import url("style-modal.css");
 * {
   font-family: Arial, Verdana, sans-serif;
 }
